@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pupil_id: 1
+  type: 
+  content: MyString
+
+two:
+  pupil_id: 1
+  type: 
+  content: MyString

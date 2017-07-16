@@ -1,0 +1,77 @@
+<%= form_for(pupil) do |f| %>
+  <% if pupil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pupil.errors.count, "error") %> prohibited this pupil from being saved:</h2>
+
+      <ul>
+      <% pupil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parent1 %>
+    <%= f.text_field :parent1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parent2 %>
+    <%= f.text_field :parent2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :advisor %>
+    <%= f.text_field :advisor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :emailcc %>
+    <%= f.text_field :emailcc %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hour %>
+    <%= f.number_field :hour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :runningTotal %>
+    <%= f.number_field :runningTotal %>
+  </div>
+
+  <div class="field">
+    <%= f.label :failing %>
+    <%= f.check_box :failing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parentconf %>
+    <%= f.number_field :parentconf %>
+  </div>
+
+  <div class="field">
+    <%= f.label :message %>
+    <%= f.text_field :message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
