@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :pupils
 end
 
 #  create_table "users", force: :cascade do |t|

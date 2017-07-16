@@ -1,4 +1,5 @@
 class Log < ApplicationRecord
+  belongs_to :pupil
 end
 
 #  create_table "logs", force: :cascade do |t|
