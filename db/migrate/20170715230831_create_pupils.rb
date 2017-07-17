@@ -2,7 +2,7 @@ class CreatePupils < ActiveRecord::Migration[5.0]
   def change
     create_table :pupils do |t|
       t.string :name
-      t.string :email
+      t.string :studentemail
       t.string :parent1
       t.string :parent2
       t.string :advisor

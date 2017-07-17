@@ -2,10 +2,10 @@
 
 one:
   pupil_id: 1
-  type: 
+  messagetype: 
   content: MyString
 
 two:
   pupil_id: 1
-  type: 
+  messagetype: 
   content: MyString

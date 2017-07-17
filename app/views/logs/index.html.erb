@@ -16,7 +16,7 @@
     <% @logs.each do |log| %>
       <tr>
         <td><%= log.pupil_id %></td>
-        <td><%= log.type %></td>
+        <td><%= log.messagetype %></td>
         <td><%= log.content %></td>
         <td><%= link_to 'Show', log %></td>
         <td><%= link_to 'Edit', edit_log_path(log) %></td>

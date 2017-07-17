@@ -2,7 +2,7 @@ class CreateLogs < ActiveRecord::Migration[5.0]
   def change
     create_table :logs do |t|
       t.integer :pupil_id
-      t.string :type
+      t.string :messagetype
       t.string :content
 
       t.timestamps
