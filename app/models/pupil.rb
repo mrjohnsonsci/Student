@@ -1,6 +1,7 @@
 class Pupil < ApplicationRecord
   has_many :logs
-  belongs_to :user
+  has_many :users, through: :classhours
+  has_many :classhours
 end
 
 # create_table "pupils", force: :cascade do |t|

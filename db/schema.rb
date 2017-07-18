@@ -10,14 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170716012239) do
+ActiveRecord::Schema.define(version: 20170717213357) do
+
+  create_table "classhours", force: :cascade do |t|
+    t.integer  "hour"
+    t.integer  "pupil_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "logs", force: :cascade do |t|
     t.integer  "pupil_id"
     t.string   "messagetype"
     t.string   "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "pupils", force: :cascade do |t|

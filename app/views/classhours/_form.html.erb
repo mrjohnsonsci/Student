@@ -1,0 +1,32 @@
+<%= form_for(classhour) do |f| %>
+  <% if classhour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(classhour.errors.count, "error") %> prohibited this classhour from being saved:</h2>
+
+      <ul>
+      <% classhour.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hour %>
+    <%= f.number_field :hour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pupil_id %>
+    <%= f.number_field :pupil_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

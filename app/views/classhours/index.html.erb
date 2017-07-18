@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Classhours</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hour</th>
+      <th>Pupil</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classhours.each do |classhour| %>
+      <tr>
+        <td><%= classhour.hour %></td>
+        <td><%= classhour.pupil_id %></td>
+        <td><%= classhour.user_id %></td>
+        <td><%= link_to 'Show', classhour %></td>
+        <td><%= link_to 'Edit', edit_classhour_path(classhour) %></td>
+        <td><%= link_to 'Destroy', classhour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Classhour', new_classhour_path %>

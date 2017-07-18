@@ -1,0 +1,2 @@
+module ClasshoursHelper
+end
